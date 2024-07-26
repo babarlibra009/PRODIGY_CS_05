@@ -1,6 +1,8 @@
 '''
 Task # 03:
 Password Complexity Checker
+
+@BABAR 
 '''
 
 import re
@@ -15,19 +17,19 @@ def check_password_complexity(password):
 
     # Assess the strength of the password based on criteria
     if length_criteria and uppercase_criteria and lowercase_criteria and digit_criteria and special_char_criteria:
-        return "Strong password! 👍"
+        return "Strong password! GOOD👍"
     else:
         feedback = "Weak password. Consider the following improvements:\n"
         if not length_criteria:
-            feedback += "- Ensure the password is at least 8 characters long\n"
+            feedback += "- Please Ensure the password is at least 8 characters long\n"
         if not uppercase_criteria:
-            feedback += "- Include at least one uppercase letter\n"
+            feedback += "- Please Include at least one uppercase letter\n"
         if not lowercase_criteria:
-            feedback += "- Include at least one lowercase letter\n"
+            feedback += "- Please Include at least one lowercase letter\n"
         if not digit_criteria:
-            feedback += "- Include at least one digit\n"
+            feedback += "- Please Include at least one digit\n"
         if not special_char_criteria:
-            feedback += "- Include at least one special character (!@#$%^&*(),.?\":{}|<>)\n"
+            feedback += "- Please Include at least one special character (!@#$%^&*(),.?\":{}|<>)\n"
 
         return feedback
 
